@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>ChatApp_Designed and Dev by Manik</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="./public/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="./public/swipe.min.css" type="text/css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/scripts.home.js"></script>
+</head>
+<body>
+	<!-- Layout -->
+	<div id="primary">
+		<form class="" id="UsernameForm" action="">
+       <input type="text" id="username" value="" placeholder="Username" required/>
+       <input type="submit" name="" value="Signup" id="signUpButton"/>
+     </form>
+
+     <div id="error-container" style="display: none"><p> username already exists! Signup with a different usename </p></div>
+	</div>
+
+  <div class="layout" id="secondary" style="display: none">
+
+		<!-- Start of Sidebar -->
+		<div class="sidebar">
+			<div class="container">
+				<div class="tab-content">
+					<!-- Start of Discussions -->
+					<div class="tab-pane fade active show" id="conversations" role="tabpanel">
+						<div class="middle">
+							<h4>Online Users</h4>
+							<hr>
+							<ul class="nav discussions" role="tablist" id="userListContainer">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Sidebar -->
+
+		<!-- Start of Chat -->
+		<div class="chat open">
+			<div class="tab-content">
+
+
+				<!-- Start of Chat Room -->
+				<!-- End of Chat Room -->
+
+				<!-- Start of Chat Room -->
+
+				<div class="tab-pane fade active show"  role="tabpanel">
+					<div class="item" >
+						<div class="content">
+							<div class="" id="chats">
+								<!-- <div id="chat1">
+									<div class="container">
+										<div class="top">
+											<div class="headline">
+												<div class="content">
+													<h5 id="currentFriend"></h5>
+													<span>Online</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="middle" id="scroll">
+										<div class="container">
+											<ul id="messagesContainer">
+
+											</ul>
+										</div>
+									</div>
+								</div> -->
+							</div>
+
+							<div class="container" id="messageSenderDiv" style="display: none">
+								<div class="bottom">
+									<form>
+										<input id="message" class="form-control" placeholder="Type message..." rows="1" autofocus></input>
+										<button type="submit" class="btn prepend" id="messageSenderButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="eva eva-paper-plane"><g data-name="Layer 2"><g data-name="paper-plane"><path d="M21 4a1.31 1.31 0 0 0-.06-.27v-.09a1 1 0 0 0-.2-.3 1 1 0 0 0-.29-.19h-.09a.86.86 0 0 0-.31-.15H20a1 1 0 0 0-.3 0l-18 6a1 1 0 0 0 0 1.9l8.53 2.84 2.84 8.53a1 1 0 0 0 1.9 0l6-18A1 1 0 0 0 21 4zm-4.7 2.29l-5.57 5.57L5.16 10zM14 18.84l-1.86-5.57 5.57-5.57z"></path></g></g></svg></button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- End of Chat Room -->
+
+
+
+
+
+
+			</div>
+		</div>
+		<!-- End of Chat -->
+	</div>
+</body>
+
+</html>
